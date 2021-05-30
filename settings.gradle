@@ -1,0 +1,2 @@
+rootProject.name='DashIN_Vendors'
+include ':app'

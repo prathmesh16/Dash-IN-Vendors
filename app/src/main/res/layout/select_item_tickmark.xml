@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/cat_name"
+        android:layout_width="match_parent"
+        android:layout_height="60dip"
+        android:drawableRight="@drawable/expand_arrow"
+        android:fontFamily="@font/helveticaneuemedium500"
+        android:gravity="center|start"
+        android:hint="Item name"
+        android:paddingLeft="12dip"
+        android:paddingRight="20dip"
+        android:text="Category name"
+        android:textColor="#212121"
+        android:textSize="20sp" />
+    <View
+        android:layout_width="370dp"
+        android:layout_height="1dp"
+        android:background="#e2e2e2"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/cat_name"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cat_name"
+        android:elevation="3dip"
+        android:id="@+id/item"
+        />
+</RelativeLayout>

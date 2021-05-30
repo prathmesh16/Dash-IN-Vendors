@@ -1,0 +1,25 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="AppTheme.5Star">
+        <item name="colorAccent">@color/green</item>
+    </style>
+    <style name="AppTheme.4Star">
+        <item name="colorAccent">@color/openColor</item>
+    </style>
+    <style name="AppTheme.3Star">
+        <item name="colorAccent">@color/quantum_yellowA200</item>
+    </style>
+    <style name="AppTheme.2Star">
+        <item name="colorAccent">@color/quantum_orange</item>
+    </style>
+    <style name="AppTheme.1Star">
+        <item name="colorAccent">@color/closeColor</item>
+    </style>
+</resources>

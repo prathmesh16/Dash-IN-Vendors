@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".SelectItems">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="Draft Name"
+        android:textColor="@color/text_color"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/name_of_draft"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@id/textView"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@null"
+        android:fontFamily="@font/helveticaneuemedium500"
+        android:hint="Type here ..."
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name_of_draft"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="Menu Timig"
+        android:textColor="@color/text_color"
+        android:textSize="24sp" />
+
+    <Spinner
+        android:id="@+id/timings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView2"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/cat_list"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/timings"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="20dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginBottom="75dp" />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="10dip"
+        android:layout_marginBottom="10dip"
+        android:background="@android:color/transparent"
+        android:foreground="@drawable/green_ok"
+        android:elevation="0dp"
+        style="?android:attr/borderlessButtonStyle"
+        app:elevation="0dp"
+        android:backgroundTint="@null"
+        android:id="@+id/save"
+        />
+</RelativeLayout>

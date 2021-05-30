@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuCaller">
+<androidx.appcompat.widget.AppCompatButton
+    android:layout_width="200dip"
+    android:layout_height="100dip"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="40dip"
+    android:id="@+id/Edit_items"
+    android:background="@drawable/menu_settings_button"
+    android:textColor="@color/white"
+    android:textSize="25dp"
+    android:gravity="center"
+    android:text="Edit Item List"
+    />
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="200dip"
+        android:layout_height="100dip"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dip"
+        android:layout_below="@+id/Edit_items"
+        android:id="@+id/Manage_time_table"
+        android:background="@drawable/menu_settings_button"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:text="Time table"
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="200dip"
+        android:layout_height="100dip"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dip"
+        android:layout_below="@+id/Manage_time_table"
+        android:background="@drawable/menu_settings_button"
+        android:id="@+id/draft"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:text="Add Draft"
+        />
+
+
+
+</RelativeLayout>

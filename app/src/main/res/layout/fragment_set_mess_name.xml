@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".fragments.SetMessNameFragment">
+
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/dashin_logo"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="258dp"
+        android:src="@drawable/main_image"
+        android:layout_marginTop="50dp"/>
+
+    <EditText
+        android:id="@+id/mess_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/pink_layout"
+        android:textSize="30sp"
+        android:paddingVertical="10dp"
+        android:layout_marginHorizontal="20dp"
+        android:paddingHorizontal="10dp"
+        android:hint="What's the name of your Restaurant ?"
+        android:textColor="@color/pink_layout"
+        />
+
+
+        <ImageButton
+            android:id="@+id/mess_name_next_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/disabled_button"/>
+
+
+
+
+
+</LinearLayout>

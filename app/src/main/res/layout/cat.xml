@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="370dip"
+    android:layout_height="100dip"
+    >
+    <EditText
+        android:layout_width="200dip"
+        android:layout_height="30dip"
+        android:layout_marginLeft="15dip"
+        android:background="@drawable/blackborder"
+        android:hint="Enter Category name"
+        android:textSize="20dip"
+        android:paddingLeft="6dip"
+        android:textColor="@color/black"
+        android:layout_marginTop="15dip"
+        android:id="@+id/category_name"
+        android:inputType="textCapCharacters"
+        android:cursorVisible="true"
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="120dip"
+        android:layout_height="30dip"
+        android:layout_toRightOf="@id/category_name"
+        android:layout_marginTop="15dip"
+        android:layout_marginLeft="15dip"
+        android:textSize="15dip"
+        android:text="Fill Details"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:id="@+id/details_button"
+        android:background="@drawable/button_background"
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="120dip"
+        android:layout_height="28dip"
+        android:layout_below="@id/details_button"
+        android:layout_toRightOf="@+id/category_name"
+        android:layout_marginTop="10dip"
+        android:layout_marginLeft="15dip"
+        android:text="Delete"
+        android:textColor="@color/quantum_googred"
+        android:textSize="15dip"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:id="@+id/deleteButton"
+        android:background="@drawable/deletebutton"
+        />
+    <Switch
+        android:layout_height="wrap_content"
+        android:layout_width="195dip"
+        android:layout_below="@+id/category_name"
+        android:id="@+id/switchType"
+        android:layout_marginLeft="20dip"
+        android:layout_marginTop="10dip"
+        android:enabled="true"
+        android:shadowColor="@color/grey"
+        android:checked="false"
+        android:textSize="18dip"
+        android:gravity="left"
+        android:text="Simple menu"
+        />
+</RelativeLayout>

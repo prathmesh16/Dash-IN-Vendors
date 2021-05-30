@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.MessDescriptionFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/dashin_logo"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1 . Write a short description of your mess"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/pink"
+        android:textSize="18sp"
+        android:layout_marginHorizontal="20dp"/>
+
+    <EditText
+        android:id="@+id/mess_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="The Restaurant Serves Vegetarian Food."
+        android:textColorHint="@color/md_grey_800"
+        android:imeOptions="actionDone"
+        android:importantForAutofill="no"
+        android:inputType="textMultiLine"
+        android:maxLength="40"
+        android:textSize="18sp"
+        android:textColor="@color/md_grey_800"
+        android:layout_marginHorizontal="20dp"
+        android:backgroundTint="@color/pink"
+        android:layout_marginTop="20dp"/>
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:layout_marginTop="40dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2. Upload some photos your mess"
+            android:textColor="@color/pink"
+            android:textSize="18sp"
+            />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select atleast 1 image to display"
+        />
+
+    </LinearLayout>
+
+    <ImageButton
+            android:id="@+id/add_mess_image"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/ic_edit"
+            android:background="@drawable/rounded_corners"
+            android:backgroundTint="@color/pink"
+            android:padding="10dp"
+            android:layout_marginLeft="10dp"/>
+
+</LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/upload_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="120dp"
+        android:layout_marginTop="20dp">
+<!--        android:visibility="gone"-->
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <ImageButton
+        android:id="@+id/mess_desc_next_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/disabled_button"
+        />
+
+    </LinearLayout>
+
+
+</ScrollView>

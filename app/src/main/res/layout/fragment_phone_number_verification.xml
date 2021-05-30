@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".fragments.PhoneNumberVerification">
+
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/dashin_logo"
+        android:layout_marginTop="50dp"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/main_img"
+        android:scaleX="1.1"
+        android:scaleY="1.1"
+        />
+    
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/main_txt_login"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="20dp"
+        />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_margin="30dp">
+
+
+
+    <LinearLayout
+        android:id="@+id/ll_phone_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        android:background = "@drawable/enter_no_bg">
+
+        <EditText
+            android:id="@+id/number"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:hint="Enter your mobile number"
+            android:gravity="center_vertical"
+            android:layout_marginHorizontal="20dp"
+            android:textSize="16sp"
+            android:maxLength="10"
+            android:backgroundTint="@color/white"
+        />
+
+        <ImageView
+            android:id="@+id/horizontal_line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/txtfield_line"
+            android:layout_marginHorizontal="20dp"
+            android:visibility="gone"/>
+
+        <EditText
+            android:id="@+id/otp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="center_vertical"
+            android:layout_marginHorizontal="20dp"
+            android:textSize="16sp"
+            android:hint="Enter verification code"
+            android:backgroundTint="@color/white"
+            android:visibility="gone"/>
+
+
+    </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/phone_number_next_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/login_nxt_arrow"
+            android:layout_marginBottom="12dp"
+            android:layout_marginRight="15dp"
+            android:background="@color/white"
+            android:layout_alignBottom="@+id/ll_phone_number"
+            android:layout_alignParentRight="true"
+
+            />
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/version"
+        android:layout_marginTop="80dp"/>
+
+
+</LinearLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="50dip">
+
+    <TextView
+        android:id="@+id/item_name"
+        android:layout_width="200dip"
+        android:layout_height="20dip"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="13dip"
+        android:fontFamily="@font/helveticaneuemedium500"
+        android:text="Item name"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="90dip"
+        android:layout_height="20dip"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dip"
+        android:layout_toRightOf="@id/item_name"
+        android:fontFamily="@font/helveticaneuemedium500"
+        android:text="Item name"
+        android:textSize="17sp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/tick"
+        android:layout_width="30dip"
+        android:layout_height="30dip"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="0dip"
+        android:layout_marginTop="12dip"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/empty_circle"
+        android:shadowColor="#0fff"
+        android:stateListAnimator="@null" />
+
+</RelativeLayout>

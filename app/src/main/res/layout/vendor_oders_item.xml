@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="1dp"
+    android:layout_margin="1dp"
+    android:background="@drawable/rounded_corners">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/orders_out_ll">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="0.4">
+
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/order_LL"
+               android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/helveticaneuemedium500"
+                    android:text="Order no: #"
+                    android:textSize="17dip" />
+
+                <TextView
+                    android:id="@+id/order_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dip"
+                    android:fontFamily="@font/helveticaneuemedium500"
+                    android:text="123456"
+                    android:textSize="17dip" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/helveticaneuemedium500"
+                    android:text="Payment: "
+                    android:textSize="17dip" />
+
+                <TextView
+                    android:id="@+id/method"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dip"
+                    android:fontFamily="@font/helveticaneuemedium500"
+                    android:text="UPI"
+                    android:textSize="17dip" />
+
+            </LinearLayout>
+
+           </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/sub_LL">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/helveticaneuemedium500"
+                    android:text="Subscription #"
+                    android:textSize="17dip" />
+
+                <TextView
+                    android:id="@+id/subscription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dip"
+                    android:fontFamily="@font/helveticaneuemedium500"
+                    android:text="123456"
+                    android:textSize="17dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/helveticaneuemedium500"
+                    android:text="Type: "
+                    android:textSize="17dip" />
+
+            <TextView
+                android:id="@+id/type"
+                android:layout_width="wrap_content"
+                android:layout_height="25dip"
+                android:fontFamily="@font/helveticaneuemedium500"
+                android:text="Pre-Oder"
+                android:textSize="17dip" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="0.8">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="25dip"
+                android:id="@+id/time"
+                android:text="1 min ago"
+                android:textSize="17dip"
+                android:ellipsize="marquee"
+                android:layout_marginBottom="6dp"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Price: "
+                    android:textSize="17dip"
+                    android:fontFamily="@font/helveticaneuemedium500"
+                    />
+                <TextView
+                    android:layout_width="100dip"
+                    android:layout_height="wrap_content"                    android:layout_below="@+id/HoldMyDate"
+                    android:id="@+id/amount"
+                    android:text="Amount"
+                    android:textSize="17dip"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/helveticaneuemedium500"
+                    android:ellipsize="marquee"
+                    />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/order_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/orders_out_ll"
+            android:ellipsize="end"
+            android:maxLines="10"
+            android:textColor="@color/black"
+            android:text="Paneer tikka x 1, Butter roti x 4, Pulav x 1"
+            android:textSize="18dip" />
+
+
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal"
+         android:layout_below="@id/order_details">
+
+
+         <TextView
+             android:id="@+id/order_accept_btn"
+             android:layout_width="match_parent"
+             android:layout_height="40dp"
+             android:textColor="@color/quantum_googgreen700"
+             android:text="Accept"
+             android:gravity="center"
+             android:textSize="22sp"
+             android:layout_weight="1"
+             android:backgroundTint="@color/white"
+             />
+
+         <TextView
+             android:id="@+id/order_reject_btn"
+             android:layout_width="match_parent"
+             android:layout_height="40dp"
+             android:textColor="@color/mapbox_navigation_route_layer_congestion_red"
+             android:text="Reject"
+             android:gravity="center"
+             android:layout_weight="1"
+             android:textSize="22sp"
+             android:backgroundTint="@color/white"/>
+
+     </LinearLayout>
+
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="25dip"-->
+<!--            android:id="@+id/HoldMyTime"-->
+<!--            android:text="2 mins ago"-->
+<!--            android:layout_below="@id/HoldMyOrder"-->
+<!--            android:textSize="17dip"-->
+<!--            android:ellipsize="marquee"-->
+<!--            android:layout_alignParentRight="true"-->
+<!--            />-->
+
+    </RelativeLayout>
+
+
+</com.google.android.material.card.MaterialCardView>

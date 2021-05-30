@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ff5474</color>
+    <color name="colorPrimaryDark">#ff5474</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="bgcolor">#e03845</color>
+    <color name="white">#FFFFFF</color>
+    <color name="active_dots">#fffafa</color>
+    <color name="inactive_dots">#83878b</color>
+    <color name="black">#000000</color>
+    <color name="button_color">#e03845</color>
+    <color name="new_button_color">#de4753</color>
+    <color name="blue">#2554C7</color>
+    <color name="grey">#7E7E7E</color>
+    <color name="pink">#ff5474</color>
+    <color name="green">#447C0D</color>
+    <color name="pink_layout">#EB0957</color>
+    <color name="text_color">#212121</color>
+    <color name="openColor">#4CAF50</color>
+    <color name="closeColor">#A33B3B</color>
+    <color name="orange">#FF6838</color>
+</resources>

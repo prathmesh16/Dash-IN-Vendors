@@ -1,0 +1,18 @@
+<resources>
+    <array name="discount_type">
+        <item>Discount Type</item>
+        <item>FIRSTXY%OFF</item>
+        <item>X%OFF</item>
+    </array>
+
+    <array name="subscription_type">
+        <item>Subscription Type</item>
+        <item>One Time</item>
+        <item>Two Time</item>
+    </array>
+
+    <string name="app_name">DashIN_Vendors</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
